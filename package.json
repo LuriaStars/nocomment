@@ -1,0 +1,37 @@
+{
+    "name": "nocomment",
+    "displayName": "NoComment",
+    "description": "Toggle comment visibility for any language",
+    "version": "0.0.1",
+    "publisher": "luria",
+    "icon": "images/icon.png",
+    "repository": { "type": "git", "url": "https://github.com/LuriaStars/nocomment" },
+    "engines": { "vscode": "^1.85.0" },
+    "categories": ["Other"],
+    "activationEvents": [],
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "nocomment.toggle",
+                "title": "NoComment: Toggle Comments"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "nocomment.toggle",
+                "key": "ctrl+alt+/",
+                "when": "editorTextFocus"
+            }
+        ]
+    },
+    "scripts": {
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.85.0",
+        "@types/node": "^20.0.0",
+        "typescript": "^5.0.0"
+    }
+}
