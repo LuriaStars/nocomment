@@ -26,10 +26,10 @@ export function activate(context: vscode.ExtensionContext) {
     });
 
     statusBarItem = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Right, 100);
-    statusBarItem.command = 'nocomment.toggle';
+    statusBarItem.command = 'stfu.toggle';
     updateStatusBar(vscode.window.activeTextEditor);
 
-    const toggle = vscode.commands.registerCommand('nocomment.toggle', () => {
+    const toggle = vscode.commands.registerCommand('stfu.toggle', () => {
         const editor = vscode.window.activeTextEditor;
         if (!editor) return;
 

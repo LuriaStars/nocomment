@@ -1,6 +1,6 @@
 {
-    "name": "nocomment",
-    "displayName": "NoComment",
+    "name": "stfu",
+    "displayName": "STFU",
     "description": "Toggle comment visibility for any language",
     "version": "0.0.1",
     "publisher": "luria",
@@ -13,13 +13,13 @@
     "contributes": {
         "commands": [
             {
-                "command": "nocomment.toggle",
-                "title": "NoComment: Toggle Comments"
+                "command": "stfu.toggle",
+                "title": "STFU: Toggle Comments"
             }
         ],
         "keybindings": [
             {
-                "command": "nocomment.toggle",
+                "command": "stfu.toggle",
                 "key": "ctrl+alt+/",
                 "when": "editorTextFocus"
             }
